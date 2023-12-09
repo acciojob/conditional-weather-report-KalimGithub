@@ -6,14 +6,25 @@ const Weather = () => {
     return (
         <div className='weather-container'>
             {(data.temperature > 20 && (
-                <p style={{color: 'red'}}>
-                    Current Temp : {data.temperature}, Current Condition : {data.conditions}
-                </p>
+                <div>
+                    <p style={{ color: 'red' }}>
+                        Current Temp : {data.temperature}
+                    </p>
+                    <p style={{ color: 'red' }}>
+                    Current Condition : {data.conditions}
+                    </p>
+                </div>
+                
             ))
             || (
-                <p style={{color:"blue"}}>
-                    Current Temp : {data.temperature}, Current Condition : {data.conditions}
-                </p>
+                <div>
+                    <p style={{ color: 'blue' }}>
+                        Current Temp : {data.temperature}
+                    </p>
+                    <p style={{ color: 'blue' }}>
+                    Current Condition : {data.conditions}
+                    </p>
+                </div>
             )
             }
         </div>
