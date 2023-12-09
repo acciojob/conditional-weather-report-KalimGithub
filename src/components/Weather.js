@@ -2,7 +2,7 @@ import React from 'react';
 
 const Weather = () => {
 
-    const data = { temperature: 18, conditions: "Sunny" }
+    const data = { temperature: 25, conditions: "Sunny" }
     return (
         <div className='weather-container'>
             {(data.temperature > 20 && (
